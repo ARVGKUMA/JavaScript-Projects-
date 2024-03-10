@@ -75,3 +75,23 @@ function Vote_function(){
     Age = document.getElementById("Age").value;
     Can_vote =(Age<18)? "You are not old enough to vote" :"You can vote!"
     document.getElementById("vote").innerHTML = Can_vote + " to vote.";
+}
+//contructor class//
+function vehicle(make,model,year,color){
+    this.vehicle_make = make;
+    this.vehicle_model = model;
+    this.vehicle_year = year;
+    this.vehicle_color = color;
+}
+//contructor class//
+var jack = new vehicle("dodge","viper",2020,"red");
+var emily = new vehicle("jeep","trail-hawk",2018,"white and black");
+
+var erik = new vehicle("ford","pinto",1971,"green");
+var arvind = new vehicle("hyundai","santafe",2024,"velvet");
+
+function myfunction(){   //Keywords constructors//
+    document.getElementById("keywords_and_constructors").innerHTML =
+    "erik drives a" + erik.vehicle_color + "-colored" + erik.vehicle_model +
+    "manufactured in" + erik.vehicle_year;
+}
